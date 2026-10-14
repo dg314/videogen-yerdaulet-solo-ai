@@ -182,6 +182,7 @@ Model Context Protocol servers let your agent *do things*, not just chat. These 
 - [Browserbase MCP](mcp/browserbase.md) — cloud browser for clicks, form fills, and screenshots when scraping isn't enough. 🧩
 - [Sequential Thinking MCP](mcp/sequential-thinking.md) — externalises step-by-step reasoning; #1 by usage on Smithery. 🔓
 - [Invompt](https://invompt.com) — drafts invoices and quotes from Claude, ChatGPT, or Cursor. You review each document before it is sent. Guest use needs no account. 🧩 🆓
+- [VideoGen MCP](https://videogen.io/videogen-mcp) — create videos, generate media, remix projects and export MP4s; requires VideoGen API access and paid generation credits. 🔌 🧩
 
 **More MCP servers:** [docs, search, data, email, and deploy servers worth wiring up in 2026](mcp/trending-2026.md).
 
