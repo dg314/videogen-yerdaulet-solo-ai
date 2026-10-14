@@ -182,6 +182,7 @@ Model Context Protocol servers let your agent *do things*, not just chat. These 
 - [Browserbase MCP](mcp/browserbase.md) — cloud browser for clicks, form fills, and screenshots when scraping isn't enough. 🧩
 - [Sequential Thinking MCP](mcp/sequential-thinking.md) — externalises step-by-step reasoning; #1 by usage on Smithery. 🔓
 - [Invompt](https://invompt.com) — drafts invoices and quotes from Claude, ChatGPT, or Cursor. You review each document before it is sent. Guest use needs no account. 🧩 🆓
+- [looot](https://looot.ai) — one API key and prepaid balance for 2,500+ data endpoints (work emails, phones, company enrichment, Google SERP, web pages) over a remote MCP server; pay per call, no free tier. 🔌 🧩
 - [VideoGen MCP](https://videogen.io/videogen-mcp) — create videos, generate media, remix projects and export MP4s; requires VideoGen API access and paid generation credits. 🔌 🧩
 
 **More MCP servers:** [docs, search, data, email, and deploy servers worth wiring up in 2026](mcp/trending-2026.md).
@@ -206,6 +207,7 @@ A **Claude skill** is a reusable `.claude/skills` folder (markdown + scripts) th
 - [ponytail](skills/ponytail.md) — anti-over-engineering skill that makes the agent "think like the laziest senior dev"; ~54% less code on average. 🔓
 - [redpen](https://github.com/yerdaulet-damir/redpen) — anti-slop *copywriting* skill: the old ad man with the red pen, every line must pass three questions (can I visualize it / falsify it / can nobody else say it) before it ships. Kills adjective-slop in headlines, landing pages, and taglines. 🔓
 - [superpowers](skills/superpowers.md) — plan-first, TDD agentic framework (brainstorm → plan → subagent execution → review). 🔓
+- [workkit](https://github.com/ITW-Creative-Works/workkit) - Claude Code plugin that runs GitHub Issues as a delivery pipeline: skills to triage, spec, build, review and ship each issue, checked by guard hooks and a scout, worker and verifier agent crew. 🆓
 - [Context7](skills/context7.md) — injects up-to-date library docs so the agent stops hallucinating stale APIs. 🧩 🔓
 
 ### Official Anthropic skills
@@ -228,12 +230,14 @@ Give your agent a persistent brain beyond the codebase. **→ Full pages in [`me
 - [Mem0](https://github.com/mem0ai/mem0) — open-source memory layer for AI agents and apps. 🔓
 - [Mnemoverse](https://mnemoverse.com) — hosted memory engine for AI agents, reached over MCP; tell it a recalled memory helped or misled, and it re-ranks what comes back next. 🔌 🧩 🆓
 - [Screenpipe](https://screenpipe.com): Search locally captured screen text and audio transcripts for work recall and meeting notes via MCP or a local API; source-available under the Screenpipe Commercial License, with configured cloud services able to receive context. 🔌 🧩
+- [ORANO Personal Context MCP](https://oranoai.com/mcp) — personal read-only remote MCP server (streamable HTTP, per-user Bearer key) that lets your agent search summaries and takeaways from videos, articles and PDFs you saved in ORANO. 🧩
 
 ## AI Coding Agents
 
 - [Claude Code](https://claude.com/claude-code) — Anthropic's terminal/IDE coding agent; the hub of this stack. 🧩
 - [NextReset](https://nextreset.ai/) — tracks source-linked Codex reset history and experimental forecasts, with a browser-local countdown timer. 🆓
 - [Cursor](https://cursor.com) — the AI-native IDE. 🧩
+- [Massvai](https://massvai.com) — builds exportable Next.js apps from prompts, with a live preview, Supabase, GitHub sync, and Vercel deployment. 🆓
 - [Windsurf](https://windsurf.com) — agentic IDE with deep codebase awareness.
 - [Cline](https://github.com/cline/cline) — open-source autonomous coding agent for VS Code. 🔓
 - [Aider](https://aider.chat) — AI pair programming in your terminal. 🔓
@@ -241,6 +245,7 @@ Give your agent a persistent brain beyond the codebase. **→ Full pages in [`me
 - [5dive](https://github.com/5dive-ai/5dive) — runs a team of AI agents on your own server. you hand them work from telegram. 🔓 🆓
 - [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay) — records a coding-agent run beneath the harness, then replays it offline from the recorded bytes with no model called, or re-runs it from a chosen step on a different model. 🧩 🆓 🔓
 - [Orbi](https://github.com/orbi-build/orbi) — self-hosted coding agent for GitHub repos: label an issue `ai-ready` and it writes the code, opens a PR, has an independent review session check it against the issue's acceptance criteria, merges, and tags a release. 🔓 🆓
+- [Sillage](https://github.com/MarlBurroW/sillage) - self-hosted, mobile-first web UI that drives the native Claude Code and Codex CLIs on your own machine, with server-side sessions that outlive the client, full-text search across conversations, an IDE panel (files, editor, diffs, terminal), worktrees, and an installable PWA; single Docker container. 🧩 🆓 🔓
 
 ## Automation & Agent Frameworks
 
@@ -271,7 +276,9 @@ The libraries that separate cinematic from slop. **→ Full stack page: [tools/f
 The plumbing a solo builder needs to ship and run an AI product — picked for their AI-relevant angle, not as a generic dev-tools list.
 
 - [Supabase](https://supabase.com) — Postgres + auth + storage with `pgvector` built in, so it doubles as the vector store for your RAG. 🔌 🔓
+- [Prisma Postgres](https://www.prisma.io/postgres) - managed Postgres with zero cold starts and a no-card free plan; `npx create-db@latest` creates a database from the terminal, and the official MCP server lets agents manage it. 🔌 🧩 🆓
 - [Vercel](https://vercel.com) — deploy in one push, plus the [AI SDK](https://sdk.vercel.ai) and [v0](https://v0.dev) for building AI UIs. 🔌
+- [Prisma Compute](https://www.prisma.io/compute) - hosts TypeScript apps and AI agents (Node.js, Bun or Next.js) next to Prisma Postgres, with streamed responses and scale to zero when idle; free plan includes 1M requests/month. 🧩 🆓
 - [PostHog](https://posthog.com) — product analytics, session replay, and LLM analytics to track AI feature cost and quality. 🔌 🔓
 - [Self-hosted analytics for solo builders](guides/self-hosted-analytics.md), open-source web, product, and LLM observability you can own (Umami, Plausible, Langfuse, Helicone) plus analytics MCP servers.
 - [Convex](https://convex.dev) — reactive backend with first-class AI agent and workflow support. 🔌
@@ -285,6 +292,7 @@ Building is half the job — this is how a solo builder gets users. **Where to l
 
 **Research what to build**
 - [IdeaHunter](https://ideahunter.today) — turns public buyer pain and market signals into scoped app ideas with source evidence, MVP boundaries, and a validation step. 🆓
+- [FalcoScan](https://falcoscan.com) — searchable AI product database with market activity, competition, and opportunity signals; includes an API and MCP server. 🔌 🧩
 
 **Where to launch**
 - [Product Hunt](https://producthunt.com) — the classic launch-day spike for tools and SaaS.
@@ -314,6 +322,7 @@ Building is half the job — this is how a solo builder gets users. **Where to l
 - [shortshort](https://www.shortshort.io) — turns long videos into vertical clips with face tracking and word-by-word captions; includes a limited free AI trial.
 - [ScaleReach](https://www.scalereach.ai) - turns long videos into vertical 9:16 clips with AI captions and face-tracking crop, and schedules them to social accounts. 🔌 🧩
 - [kdpbook.io](https://kdpbook.io) — describe a book in a chat and get the Amazon KDP files: print PDF, full-wrap cover, Kindle EPUB and listing sheet; includes 2,000 free credits at signup (free-plan exports are watermarked).
+- [ImagineYourBook](https://www.imagineyourbook.com/) - plans and drafts full-length books, rewrites manuscripts in the author's voice, keeps series continuity with a story bible, and exports EPUB, Word, or Markdown.
 
 ---
 

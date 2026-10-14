@@ -98,6 +98,7 @@ This file is machine-readable. Agents may read it to find and call the right too
 - [Browserbase MCP](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/mcp/browserbase.md): cloud browser for real clicks, form fills, screenshots. MCP.
 - [Sequential Thinking MCP](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/mcp/sequential-thinking.md): externalises step-by-step reasoning before action, #1 by usage on Smithery. Open.
 - [Invompt](https://invompt.com): drafts invoices and quotes from Claude, ChatGPT, or Cursor. You review each document before it is sent. Guest use needs no account. MCP, Free.
+- [looot](https://looot.ai): one API key and prepaid balance for 2,500+ data endpoints (work emails, phones, company enrichment, Google SERP, web pages) over a remote MCP server; pay per call, no free tier. API, MCP.
 - MCP registries: [Official Registry](https://github.com/modelcontextprotocol/registry), [Smithery](https://smithery.ai), [mcp.so](https://mcp.so), [PulseMCP](https://www.pulsemcp.com), [Glama](https://glama.ai/mcp/servers).
 - [VideoGen MCP](https://videogen.io/videogen-mcp): video workflows, media generation, project remixing and MP4 export; VideoGen API access and paid generation credits required. API, MCP.
 
@@ -105,12 +106,14 @@ This file is machine-readable. Agents may read it to find and call the right too
 - [Claude Code](https://claude.com/claude-code): terminal/IDE coding agent. MCP.
 - [NextReset](https://nextreset.ai/): tracks source-linked Codex reset history and experimental forecasts, with a browser-local countdown timer. Free.
 - [Cursor](https://cursor.com): AI-native IDE. MCP.
+- [Massvai](https://massvai.com): builds exportable Next.js apps from prompts, with a live preview, Supabase, GitHub sync, and Vercel deployment. Free.
 - [Cline](https://github.com/cline/cline): open-source autonomous coding agent. Open.
 - [Aider](https://aider.chat): terminal AI pair programming. Open.
 - [YYLO](https://github.com/yylo-dev/yylo): command-line orchestrator for coding agents, typed task, validation, merge, and release-readiness boundaries, dedicated branch/worktree per task, risk-based merge queue. Open, Free.
 - [5dive](https://github.com/5dive-ai/5dive): runs a team of AI agents on your own server, you hand them work from telegram. Open, Free.
 - [OrcaReplay](https://github.com/Continuum-AI-Corp/OrcaReplay): records a coding-agent run beneath the harness, replays it offline from the recorded bytes with no model called, re-runs it from a chosen step on a different model, serves the trace store over MCP. MCP, Free, Open.
 - [Orbi](https://github.com/orbi-build/orbi): self-hosted coding agent for GitHub repos, label an issue and it writes the code, opens a PR, has an independent review session check it against the issue's acceptance criteria, merges, and tags a release. Open, Free.
+- [Sillage](https://github.com/MarlBurroW/sillage): self-hosted, mobile-first web UI that drives the native Claude Code and Codex CLIs on your own machine, server-side sessions that outlive the client, full-text search across conversations, IDE panel with files/editor/diffs/terminal, worktrees, installable PWA, single Docker container. MCP, Free, Open.
 
 ## Automation & Agent Frameworks
 - [n8n](https://n8n.io): open-source workflow automation with AI nodes. Open.
@@ -128,6 +131,7 @@ This file is machine-readable. Agents may read it to find and call the right too
 - [Mem0](https://github.com/mem0ai/mem0): open-source memory layer for AI agents. Open.
 - [Mnemoverse](https://mnemoverse.com): hosted memory engine for AI agents, reached over MCP; tell it a recalled memory helped or misled, and it re-ranks what comes back next. API, MCP, Free.
 - [Screenpipe](https://screenpipe.com): Search locally captured screen text and audio transcripts for work recall and meeting notes via MCP or a local API; source-available under the Screenpipe Commercial License, with configured cloud services able to receive context. API, MCP.
+- [ORANO Personal Context MCP](https://oranoai.com/mcp): personal read-only remote MCP server (streamable HTTP, per-user Bearer key) that lets your agent search summaries and takeaways from videos, articles and PDFs you saved in ORANO. MCP.
 
 ## Frontend Motion & Design
 - [Frontend Motion Stack](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/tools/frontend-motion.md): GSAP + Lenis + Framer Motion — the three libraries that separate cinematic from AI-slop UI. GSAP for scroll-driven scenes and timelines, Lenis for smooth-scroll inertia, Framer Motion for React transitions. Free, Open.
@@ -136,7 +140,9 @@ This file is machine-readable. Agents may read it to find and call the right too
 
 ## Backend, Deploy & Analytics
 - [Supabase](https://supabase.com): Postgres + auth + storage with pgvector built in (vector store for RAG). API, Open.
+- [Prisma Postgres](https://www.prisma.io/postgres): managed Postgres with zero cold starts and a no-card free plan; `npx create-db@latest` creates a database, official MCP server for agents. API, MCP, Free.
 - [Vercel](https://vercel.com): one-push deploy plus the AI SDK and v0 for AI UIs. API.
+- [Prisma Compute](https://www.prisma.io/compute): TypeScript app and agent hosting next to Prisma Postgres, scale to zero, 1M requests/month free. MCP, Free.
 - [PostHog](https://posthog.com): product analytics, session replay, and LLM analytics for AI feature cost/quality. API, Open.
 - [Convex](https://convex.dev): reactive backend with first-class AI agent/workflow support. API.
 - [Clerk](https://clerk.com): drop-in auth. API.
@@ -152,6 +158,7 @@ This file is machine-readable. Agents may read it to find and call the right too
 - [ponytail](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/skills/ponytail.md): anti-over-engineering skill, ~54% less code, "think like the laziest senior dev". Open.
 - [redpen](https://github.com/yerdaulet-damir/redpen): anti-slop copywriting skill for Claude Code, Cursor, Cline & Copilot. The old ad man with the red pen: every line must pass three questions — can I visualize it, can I falsify it, can nobody else say it — before it ships. Kills adjective-slop in headlines, landing pages, taglines. Open.
 - [superpowers](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/skills/superpowers.md): plan-first TDD agentic framework. Open.
+- [workkit](https://github.com/ITW-Creative-Works/workkit): Claude Code plugin that runs GitHub Issues as a delivery pipeline, with skills to triage, spec, build, review and ship each issue and an agent crew that checks the work. Free.
 - [Context7](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/skills/context7.md): injects up-to-date library docs to stop stale-API hallucination. MCP, Open.
 - Discover more: [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code), [awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills).
 
@@ -165,10 +172,12 @@ This file is machine-readable. Agents may read it to find and call the right too
 - [Typefully](https://typefully.com): write, schedule, grow on X/Threads.
 - [Buffer](https://buffer.com): multi-channel social scheduling.
 - [IdeaHunter](https://ideahunter.today): evidence-led app ideas with buyer pain, source signals, MVP scope, and a validation step. Free.
+- [FalcoScan](https://falcoscan.com): searchable AI product database with market activity, competition, and opportunity signals; includes an API and MCP server. API, MCP.
 - [SocialEcho](https://www.socialecho.net): publishing, monitoring, analytics, and message management across eleven social platforms. Free.
 - [shortshort](https://www.shortshort.io): turns long videos into vertical clips with face tracking and word-by-word captions; includes a limited free AI trial.
 - [ScaleReach](https://www.scalereach.ai): turns long videos into vertical 9:16 clips with AI captions and face-tracking crop, and schedules them to social accounts. API, MCP.
 - [kdpbook.io](https://kdpbook.io): describe a book in a chat and get the Amazon KDP files (print PDF, full-wrap cover, Kindle EPUB, listing sheet); includes 2,000 free credits at signup, free-plan exports are watermarked.
+- [ImagineYourBook](https://www.imagineyourbook.com/): plans and drafts full-length books, rewrites manuscripts in the author's voice, keeps series continuity with a story bible, and exports EPUB, Word, or Markdown.
 
 ## Guides
 - [Edit videos with Claude Code](https://github.com/yerdaulet-damir/awesome-solo-ai/blob/main/guides/edit-video-with-claude.md): no manual editing.
